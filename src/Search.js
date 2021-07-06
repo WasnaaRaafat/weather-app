@@ -24,7 +24,7 @@ const Search = () => {
     }
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=65bd94edd330fcf61fa67b120888b455&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=65bd94edd330fcf61fa67b120888b455&units=metric`
       )
       .then((response) => {
         if (response.data.cod !== 200)

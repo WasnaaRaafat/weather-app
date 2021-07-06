@@ -76,7 +76,7 @@
 div.card {
   padding: 10px;
   margin: auto;
-  width: 400px;
+  max-width: 320px;
   background-color: #ffffff;
   border: dotted 1px;
   border-radius: 50px;
