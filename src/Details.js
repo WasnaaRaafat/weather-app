@@ -4,23 +4,21 @@ const Details = ({cityName, mainData, name}) => {
       <div className='container'>
         <div className='card'>
           <div className='card-body'>
-            <h4 className='card-title'>{name}</h4>
-            <h5 className='card-subtitle mb-2'>
-              Current temperature: {Math.round(mainData.temp)}°C
-            </h5>
+            <h3 className='card-title'>{name}</h3>
             <p className='card-text'>
-              Feels Like: {Math.round(mainData.feels_like)} °C
+              Current temperature: <span>{Math.round(mainData.temp)}°C </span>
             </p>
             <p className='card-text'>
-              Max: {Math.round(mainData.temp_max)} °C, Min:{' '}
-              {Math.round(mainData.temp_min)} °C
+              Feels Like: <span> {Math.round(mainData.feels_like)}°C </span>
             </p>
             <p className='card-text'>
-              {' '}
-              <i
-                className='fa fa-tint mr-2'
-                aria-hidden='true'
-              ></i>Humidity: {mainData.humidity}
+              Max:
+              <span> {Math.round(mainData.temp_max)}°C </span> .......... Min:
+              <span> {Math.round(mainData.temp_min)}°C</span>
+            </p>
+            <p className='card-text'>
+              Humidity:
+              <span> {mainData.humidity} </span>
             </p>
           </div>
         </div>

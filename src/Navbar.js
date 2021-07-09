@@ -2,10 +2,10 @@ import {Link} from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <h1>Weather App</h1>
-      <div className='links'>
-        <Link to='/'> Home</Link>
-      </div>
+      <Link to='/weather-app'>
+        <h1>Weather App</h1>
+      </Link>
+      <div className='links'></div>
     </nav>
   );
 };
